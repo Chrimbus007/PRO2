@@ -96,10 +96,10 @@ public class Interakcija extends JComponent implements MouseListener {
         int mouseY = e.getY();
 
         if(mouseX>= 50 && mouseX<=200 && mouseY>=300 && mouseY<=450) {//dogodek se zgodi samo ce uporabnik klikne na sliko zetona
-            narejenaStava = true; //
+            narejenaStava = true; //potrdimo da je bila stava narejena
             String[] options = new String[] {"5", "10", "20", "100"}; //nastavimo gumbe za stave ki so na voljo
-            int response = JOptionPane.showOptionDialog(null, "Prosimo izberite velikost stave", "Stavljenje v poteku", //This is the dialog that will popup when user clicks the zeton.
-                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+            int response = JOptionPane.showOptionDialog(null, "Prosimo izberite velikost stave", "Stavljenje v poteku", 
+                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]); //uporabniku pokazemo da poteka stava.
             if(response == 0) {//igralec stavi po gumbih z indeksi od leve proti desni 5 = [0], 10 = [1] etc.
                 stava = 5;
                 trenutnaBilanca -= 5;
