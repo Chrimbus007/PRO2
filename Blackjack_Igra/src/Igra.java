@@ -44,7 +44,7 @@ public class Igra {
         frame.setResizable(false); //preprecimo da se velikost spreminja
 
         butHit = new JButton("HIT"); //ustvarimo gumbe in jim dolocimo velikost ter pozicijo na igralnem polju
-        butHit.setBounds(420, 550, 100, 50); //We set their bounds.
+        butHit.setBounds(420, 550, 100, 50); 
         butStand = new JButton("STAND");
         butStand.setBounds(520, 550, 100, 50);
         butDouble = new JButton("DOUBLE");
