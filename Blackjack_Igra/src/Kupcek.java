@@ -25,7 +25,7 @@ public class Kupcek {
             }
         }
     }
-//metode za mesanje kart ter, vzemanje iz kupcka. sprotoma seveda odstranemo karto iz kupcka ki smo jo vzeli
+//metode za mesanje kart ter, vzemanje iz kupcka. sproti seveda odstranimo karto iz kupcka ki smo jo vzeli
     public void premesaj() {
         Collections.shuffle(kup);
     }
